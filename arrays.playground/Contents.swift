@@ -56,4 +56,6 @@ enum Planet: Int {
     case mars
 }
 
+let mars = Planet.mars
+
 let earth = Planet(rawValue: 2)
