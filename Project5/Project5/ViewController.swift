@@ -48,7 +48,9 @@ class ViewController: UITableViewController {
         
         return cell
     }
-
+    
+    
+    
     @objc func promtForAnswer() {
         let ac = UIAlertController(title: "Enter Answer", message: nil, preferredStyle: .alert)
         ac.addTextField()
@@ -64,7 +66,53 @@ class ViewController: UITableViewController {
     }
 
     func submit(_ answer: String){
+        let lowerAnswer = answer.lowercased()
         
+        if isPossible(word: lowerAnswer){
+            if isOriginal(word: lowerAnswer){
+                if isReal(word: lowerAnswer){
+                    usedWords.insert(answer, at: 0)
+                    let indexPath = IndexPath(row: 0, section: 0)
+                    tableView.insertRows(at: [indexPath], with: .automatic)
+                }
+                
+                else {
+                    let ac = UIAlertController(title: "The Word is Not Real", message: nil, preferredStyle: .alert)
+                    ac.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: { (UIAlertAction) in
+                        print(UIAlertAction)
+                    }))
+                    present(ac, animated: true)
+                }
+                
+            }
+        }
+    }
+    
+    
+    func isPossible(word: String) -> Bool {
+        guard var tempWord = title?.lowercased() else {return false}
+        
+        for letter in word {
+            if let positon = tempWord.firstIndex(of:letter) {
+                tempWord.remove(at: positon)
+            } else {
+                return false
+            }
+        }
+        
+        return true
+    }
+    
+    func isOriginal(word: String) ->Bool {
+        return !usedWords.contains(word)
+    }
+    
+    func isReal(word: String) -> Bool {
+        let checker = UITextChecker()
+        let range = NSRange(location: 0, length: word.utf16.count)
+        let misspelledRange = checker.rangeOfMisspelledWord(in: word, range: range , startingAt: 0, wrap: false, language: "en")
+        
+        return misspelledRange.location == NSNotFound
     }
 }
 
