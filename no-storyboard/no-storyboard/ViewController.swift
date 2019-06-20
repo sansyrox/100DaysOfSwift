@@ -1,0 +1,61 @@
+//
+//  ViewController.swift
+//  no-storyboard
+//
+//  Created by Sanskar Jethi on 20/06/19.
+//  Copyright © 2019 Sanskar Jethi. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+    
+    // let's avoid polluting view did load
+    
+    let bearImageView:UIImageView = {
+        let image = UIImage(named: "bear_foot.png")
+        let imageView = UIImageView(image: image)
+        // this enable autolayour for our code
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
+    let descriptionTextView: UITextView = {
+        let textView = UITextView()
+        textView.text = "Join us today in our fun and games!"
+        textView.font = UIFont.boldSystemFont(ofSize: 18)
+        textView.translatesAutoresizingMaskIntoConstraints = false
+        textView.textAlignment = .center
+        textView.isEditable = false
+        textView.isScrollEnabled = false 
+        return textView
+    }()
+    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        view.addSubview(bearImageView)
+        view.addSubview(descriptionTextView)
+        
+        setupLayout()
+        
+        
+    }
+    
+    private func setupLayout(){
+        bearImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        bearImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
+        bearImageView.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        bearImageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        
+        descriptionTextView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        descriptionTextView.topAnchor.constraint(equalTo: bearImageView.bottomAnchor, constant: 120).isActive = true
+        descriptionTextView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
+        descriptionTextView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        descriptionTextView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
+    }
+
+
+}
+

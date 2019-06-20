@@ -49,6 +49,9 @@ class ViewController: UITableViewController {
         return cell
     }
     
+//    override func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+//        print("Click Kiya")
+//    }
     
     
     @objc func promtForAnswer() {
