@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD39B5B122CC242600F8B5AF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD39B5B022CC242600F8B5AF /* LoginViewController.swift */; };
+		AD188D9D22CD711800D4DC6D /* CollectioNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD188D9C22CD711800D4DC6D /* CollectioNViewController.swift */; };
+		AD188D9F22CD755200D4DC6D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD188D9E22CD755200D4DC6D /* CollectionViewCell.swift */; };
 		AD4FAD7922CC1CD100AF1359 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4FAD7822CC1CD100AF1359 /* AppDelegate.swift */; };
 		AD4FAD7B22CC1CD100AF1359 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4FAD7A22CC1CD100AF1359 /* ViewController.swift */; };
 		AD4FAD7E22CC1CD100AF1359 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4FAD7C22CC1CD100AF1359 /* Main.storyboard */; };
@@ -20,7 +21,8 @@
 /* Begin PBXFileReference section */
 		11B52202D41F7720AF8826F9 /* Pods-instaDogs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instaDogs.release.xcconfig"; path = "Target Support Files/Pods-instaDogs/Pods-instaDogs.release.xcconfig"; sourceTree = "<group>"; };
 		6C1CB8570EB605A57FAD721A /* Pods-instaDogs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instaDogs.debug.xcconfig"; path = "Target Support Files/Pods-instaDogs/Pods-instaDogs.debug.xcconfig"; sourceTree = "<group>"; };
-		AD39B5B022CC242600F8B5AF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AD188D9C22CD711800D4DC6D /* CollectioNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectioNViewController.swift; sourceTree = "<group>"; };
+		AD188D9E22CD755200D4DC6D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		AD4FAD7522CC1CD100AF1359 /* instaDogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instaDogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4FAD7822CC1CD100AF1359 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD4FAD7A22CC1CD100AF1359 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +87,8 @@
 				AD4FAD7822CC1CD100AF1359 /* AppDelegate.swift */,
 				AD4FAD7A22CC1CD100AF1359 /* ViewController.swift */,
 				AD4FAD7C22CC1CD100AF1359 /* Main.storyboard */,
-				AD39B5B022CC242600F8B5AF /* LoginViewController.swift */,
+				AD188D9E22CD755200D4DC6D /* CollectionViewCell.swift */,
+				AD188D9C22CD711800D4DC6D /* CollectioNViewController.swift */,
 				AD4FAD7F22CC1CD800AF1359 /* Assets.xcassets */,
 				AD4FAD8122CC1CD800AF1359 /* LaunchScreen.storyboard */,
 				AD4FAD8422CC1CD800AF1359 /* Info.plist */,
@@ -219,8 +222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD39B5B122CC242600F8B5AF /* LoginViewController.swift in Sources */,
+				AD188D9D22CD711800D4DC6D /* CollectioNViewController.swift in Sources */,
 				AD4FAD7B22CC1CD100AF1359 /* ViewController.swift in Sources */,
+				AD188D9F22CD755200D4DC6D /* CollectionViewCell.swift in Sources */,
 				AD4FAD7922CC1CD100AF1359 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

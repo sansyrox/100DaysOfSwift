@@ -34,6 +34,8 @@ class ViewController: UIViewController {
                 if(user != nil){
                     print("user is authenticated")
                     // let vc to next view controller and to dismiss we say self.presentingViewCOntroller?.dismiss
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "collecView")
+                    self.navigationController?.pushViewController(vc!, animated: true)
                 }
                 else {
                     print(" not authenticated")
