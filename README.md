@@ -1,4 +1,5 @@
 # Swift Enthusiast
-Created this Repo to Showcase your swift Project
+Created this Repo to Showcase your swift Enthusiasm
 # Call for Contribution
-Feel free to raise PRs  any Swift Project of your choice.
+Feel free to raise PRs any Swift Project of your choice.
+Commit any Swift Project of your choice
